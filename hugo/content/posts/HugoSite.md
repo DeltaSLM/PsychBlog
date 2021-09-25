@@ -8,7 +8,7 @@ I embarked on trying to create a public website today, and, evidently, have suce
 
 # Hosting
 My personal site is currently hosted on my VPS, but it is often a hassle to deal with. I am happy with that, for that site, as I feel it provides a good learning experience, but for this site I just wanted something that would work.
-I looked for some way to host a website that was free, but also provided support for custom domains. Thankfully, I only wanted this site to be static, which made it all a lot easier. I settled on [https://pages.github.com](github pages).
+I looked for some way to host a website that was free, but also provided support for custom domains. Thankfully, I only wanted this site to be static, which made it all a lot easier. I settled on [https://pages.github.com](github-pages)
 
 # Domain
 I wanted to have a proper domain for this site, not some subdomain provided to me by github or whatever. I found [https://freenom.com](freenom), which - although seeming a little bit sketchy - seemed to have good reviews and, well, it worked... ish.
