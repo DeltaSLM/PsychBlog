@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "main.css",
-	"sourceRoot": "/home/teo/Documents/edencreeper.github.io/docs",
+	"sourceRoot": "/home/teo/Documents/edencreeper.github.io/hugo",
 	"sources": [
 		"stdin"
 	],
