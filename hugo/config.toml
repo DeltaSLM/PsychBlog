@@ -1,9 +1,9 @@
 baseURL = 'http://edencreeper.ml/'
 languageCode = 'en-gb'
-title = "eden's hugo site"
+title = "edencreeper"
 theme = 'ananke'
 
 [params]
   github = "https://github.com/edencreeper"
-  description = "eden's website"
+  description = "eden's website, made with Hugo."
   background_color_class = "bg-black"
