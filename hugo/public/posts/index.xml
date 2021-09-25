@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on eden&#39;s hugo site</title>
+    <link>http://edencreeper.ml/posts/</link>
+    <description>Recent content in Posts on eden&#39;s hugo site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sat, 25 Sep 2021 16:27:13 +0100</lastBuildDate><atom:link href="http://edencreeper.ml/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gem</title>
+      <link>http://edencreeper.ml/posts/gem/</link>
+      <pubDate>Sat, 25 Sep 2021 16:27:13 +0100</pubDate>
+      
+      <guid>http://edencreeper.ml/posts/gem/</guid>
+      <description>What I Used Finally finished setting up my Website and Gemini Capsule. I thought I should document what i used to create it
+Converting from GMI to HTML I wanted to ensure that my site wasn&amp;rsquo;t only limited to gemini, but I really didn&amp;rsquo;t want to write HTML for everything. I was originally going to try to regex it all out, as I noticed HexDSL and Uoou doing, but this was cumbersome and i couldn&amp;rsquo;t be bothered.</description>
+    </item>
+    
+  </channel>
+</rss>
