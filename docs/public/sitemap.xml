@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://edencreeper.ml/</loc>
+    <lastmod>2021-09-25T16:27:13+01:00</lastmod>
+  </url><url>
+    <loc>http://edencreeper.ml/posts/gem/</loc>
+    <lastmod>2021-09-25T16:27:13+01:00</lastmod>
+  </url><url>
+    <loc>http://edencreeper.ml/posts/</loc>
+    <lastmod>2021-09-25T16:27:13+01:00</lastmod>
+  </url><url>
+    <loc>http://edencreeper.ml/categories/</loc>
+  </url><url>
+    <loc>http://edencreeper.ml/tags/</loc>
+  </url>
+</urlset>
