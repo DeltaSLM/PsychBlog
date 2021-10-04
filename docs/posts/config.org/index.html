@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>edencreeper</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="#&#43;property: header-args:elisp :exports code #&#43;startup: fold Intro One day I was bored, and in bordom i was redditing, and in redditing i saw emacs, and then i wanted emacs, so voilas
+I shoud definitely also mention that lots of this is plagerised&hellip; mostly from some random 3000&#43;line config I found on my PC which i have no idea where from
+Doom Configuration Modules Doom uses a modular configuration&hellip; thingy that makes emacs easier to config.">
+    <meta name="generator" content="Hugo 0.88.1" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="" />
+<meta property="og:description" content="#&#43;property: header-args:elisp :exports code #&#43;startup: fold Intro One day I was bored, and in bordom i was redditing, and in redditing i saw emacs, and then i wanted emacs, so voilas
+I shoud definitely also mention that lots of this is plagerised&hellip; mostly from some random 3000&#43;line config I found on my PC which i have no idea where from
+Doom Configuration Modules Doom uses a modular configuration&hellip; thingy that makes emacs easier to config." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://edencreeper.ml/posts/config.org/" /><meta property="article:section" content="posts" />
+
+
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="#&#43;property: header-args:elisp :exports code #&#43;startup: fold Intro One day I was bored, and in bordom i was redditing, and in redditing i saw emacs, and then i wanted emacs, so voilas
+I shoud definitely also mention that lots of this is plagerised&hellip; mostly from some random 3000&#43;line config I found on my PC which i have no idea where from
+Doom Configuration Modules Doom uses a modular configuration&hellip; thingy that makes emacs easier to config.">
+
+<meta itemprop="wordCount" content="4001">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="#&#43;property: header-args:elisp :exports code #&#43;startup: fold Intro One day I was bored, and in bordom i was redditing, and in redditing i saw emacs, and then i wanted emacs, so voilas
+I shoud definitely also mention that lots of this is plagerised&hellip; mostly from some random 3000&#43;line config I found on my PC which i have no idea where from
+Doom Configuration Modules Doom uses a modular configuration&hellip; thingy that makes emacs easier to config."/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        edencreeper
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+<a href="https://github.com/edencreeper" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=http://edencreeper.ml/posts/config.org/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=http://edencreeper.ml/posts/config.org/&amp;text=" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://edencreeper.ml/posts/config.org/&amp;title=" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1"></h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="0001-01-01T00:00:00Z">January 1, 0001</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><pre tabindex="0"><code class="language-{=org}" data-lang="{=org}">#+property: header-args:elisp :exports code
+</code></pre><pre tabindex="0"><code class="language-{=org}" data-lang="{=org}">#+startup: fold
+</code></pre><h1 id="intro">Intro</h1>
+<p>One day I was bored, and in bordom i was redditing, and in redditing i
+saw emacs, and then i wanted emacs, so voilas</p>
+<p>I shoud definitely also mention that lots of this is plagerised&hellip;
+mostly from some random 3000+line config I found on my PC which i have
+no idea where from</p>
+<h1 id="doom-configuration">Doom Configuration</h1>
+<h2 id="modules">Modules</h2>
+<p>Doom uses a <em>modular</em> configuration&hellip; thingy that makes emacs easier to
+config.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-{#init.el" data-lang="{#init.el"><span style="color:#75715e">;;; init.el -*- lexical-binding: t; -*-</span>
+
+<span style="color:#75715e">;; This file controls what modules Doom loads and what order it does so in.</span>
+<span style="color:#75715e">;; Press &#39;K&#39; on a module to view documentation</span>
+<span style="color:#75715e">;; use &#39;gd&#39; to view a modules directory</span>
+
+(doom! :completion
+       &lt;&lt;doom-completion&gt;&gt;
+
+       :ui
+       &lt;&lt;doom-ui&gt;&gt;
+
+       :editor
+       &lt;&lt;doom-editor&gt;&gt;
+
+       :emacs
+       &lt;&lt;doom-emacs&gt;&gt;
+
+       :term
+       &lt;&lt;doom-term&gt;&gt;
+
+       :checkers
+       &lt;&lt;doom-checkers&gt;&gt;
+
+       :tools
+       &lt;&lt;doom-tools&gt;&gt;
+
+       :os
+       &lt;&lt;doom-os&gt;&gt;
+
+       :lang
+       &lt;&lt;doom-lang&gt;&gt;
+
+       :config
+       &lt;&lt;doom-config&gt;&gt;
+
+)
+</code></pre></div><h3 id="structure">Structure</h3>
+<p>This file is a literate configuration. We can do some things to make
+this easier on us and doom, through the <code>literate</code> module</p>
+<pre tabindex="0"><code class="language-{#doom-config" data-lang="{#doom-config">literate
+(default +bindings +smartparens)
+</code></pre><h3 id="interface">Interface</h3>
+<p>We can enable lots of modules for this. Here we go!</p>
+<pre tabindex="0"><code class="language-{#doom-completion" data-lang="{#doom-completion">(company +childframe)           ; Code completion backend
+(vertico +icons)                ; Search engine of the future
+</code></pre><pre tabindex="0"><code class="language-{#doom-ui" data-lang="{#doom-ui">doom                            ; What makes doom look how it does
+doom-dashboard                  ; The splash screen we see upon emacs launch
+doom-quit                       ; The cute little messages we see when we try to leave
+(emoji +unicode)                ; 🙂
+hl-todo                         ; highlighting TODO/FIXME/NOTE/DEPRECATED/HACK/REVIEW
+(ligatures +extra)              ; ligatures and symbols to make code look good
+minimap                         ; Show a map of the code at the side
+modeline                        ; The snazzy thing at the bottom of our screen
+nav-flash                       ; Blink the current line after switching
+ophints                         ; Highlight the region an operation acts on
+(popup +all +defaults)          ; Temporary Windows
+treemacs                        ; Project tree/file switcher
+vc-gutter                       ; vcs diff in the dringe
+workspaces                      ; tab emulation/workspaces etc
+zen                             ; distraction-free coding etc
+</code></pre><pre tabindex="0"><code class="language-{#doom-editor" data-lang="{#doom-editor">(evil +everywhere)              ; come to the dark side, we have cookies
+file-templates                  ; auto-snippets for empty files
+fold                            ; (nigh) universal code folding
+(format)                        ; automated prettiness
+snippets                        ; my elves. They type so I don't have to
+</code></pre><pre tabindex="0"><code class="language-{#doom-emacs" data-lang="{#doom-emacs">(dired +icons)                  ; Make dired pretty again
+electric                        ; smarter indenting
+(ibuffer +icons)                ; buffer switching
+undo                            ; better undo functionality
+vc                              ; version-control
+</code></pre><pre tabindex="0"><code class="language-{#doom-term" data-lang="{#doom-term">eshell                          ; the elisp shell that works everywhere
+vterm                           ; the best terminal emulation in Emacs
+</code></pre><pre tabindex="0"><code class="language-{#doom-checkers" data-lang="{#doom-checkers">syntax                          ; tasing you for every semicolon you forget
+(:if (executable-find &quot;aspell&quot;) spell) ; tasing you for misspelling mispelling
+grammar                         ; tasing grammar mistake every you make
+</code></pre><pre tabindex="0"><code class="language-{#doom-tools" data-lang="{#doom-tools">(eval +overlay)                 ; run code, run (also, repls)
+gist                            ; interacting with github gists
+(lookup                         ; helps you navigate your code and documentation
+ +dictionary                    ; dictionary/thesaurus is nice
+ +docsets)                      ; ...or in Dash docsets locally
+lsp                             ; Language Server Protocol
+(magit                          ; a git porcelain for Emacs
+ +forge)                        ; interface with git forges
+make                            ; run make tasks from Emacs
+pdf                             ; some weird format noone even uses i mean wtf
+rgb                             ; creating color strings
+</code></pre><pre tabindex="0"><code class="language-{#doom-os" data-lang="{#doom-os">(:if IS-MAC macos)              ; idec i dont use macos
+tty                             ; improve the terminal Emacs experience
+</code></pre><h3 id="language-support">Language Support</h3>
+<pre tabindex="0"><code class="language-{#doom-lang" data-lang="{#doom-lang">cc                              ; C/C++/Obj-C madness
+csharp                          ; unity, .NET, and mono shenanigans
+emacs-lisp                      ; drown in parentheses
+(javascript +lsp)               ; all(hope(abandon(ye(who(enter(here))))))
+;;(latex                          ; writing papers in Emacs has never been so fun
+;; +cdlatex                       ; quick maths symbols
+;; +lsp
+;; +fold)                         ; fold the clutter away nicities
+json                            ; At least it ain't XML
+(org                            ; organize your plain life in plain text
+ +pretty                        ; yessss my pretties! (nice unicode symbols)
+ +dragndrop                     ; drag &amp; drop files/images into org buffers
+ +jupyter                       ; ipython/jupyter support for babel
+ +pandoc                        ; export-with-pandoc support
+ +gnuplot                       ; who doesn't like pretty pictures
+ +pomodoro                      ; be fruitful with the tomato technique
+ +present                       ; using org-mode for presentations
+ +roam2)                        ; wander around notes
+(python +lsp +pyright)          ; beautiful is better than ugly
+yaml                            ; JSON, but readable
+</code></pre><h2 id="packages">Packages</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-{#packages.el" data-lang="{#packages.el"><span style="color:#75715e">;; -*- no-byte-compile: t; -*-</span>
+<span style="color:#75715e">;;; $DOOMDIR/packages.el</span>
+
+<span style="color:#75715e">;; org</span>
+&lt;&lt;org&gt;&gt;
+
+<span style="color:#75715e">;; LaTeX</span>
+&lt;&lt;latex&gt;&gt;
+
+<span style="color:#75715e">;; Web</span>
+&lt;&lt;web&gt;&gt;
+
+<span style="color:#75715e">;; looks</span>
+&lt;&lt;looks&gt;&gt;
+
+<span style="color:#75715e">;; Tweaks</span>
+&lt;&lt;tweaks&gt;&gt;
+
+<span style="color:#75715e">;; Fun</span>
+&lt;&lt;fun&gt;&gt;
+</code></pre></div><h3 id="org">Org</h3>
+<p>I spend lots of time in org-mode. Therefore, this needs to be good.</p>
+<pre tabindex="0"><code class="language-{#org" data-lang="{#org">(package! org-appear)
+(package! org-super-agenda)
+(package! doct :recipe (:host github :repo &quot;progfolio/doct&quot;))
+(package! org-padding :recipe (:host github :repo &quot;TonCherAmi/org-padding&quot; ))
+(package! org-ol-tree :recipe (:host github :repo &quot;Townk/org-ol-tree&quot;))
+(package! org-pretty-table :recipe (:host github :repo &quot;Fuco1/org-pretty-table&quot;))
+(package! org-roam-ui :recipe (:host github :repo &quot;org-roam/org-roam-ui&quot; :files (&quot;*.el&quot; &quot;out&quot;)))
+(package! org-pandoc-import
+  :recipe (:host github
+           :repo &quot;tecosaur/org-pandoc-import&quot;
+           :files (&quot;*.el&quot; &quot;filters&quot; &quot;preprocessors&quot;)))
+</code></pre><h3 id="latex">LaTeX</h3>
+<p>LaTex is an extremely useful tool for document-erising Lets add some
+useful packages for that, too!</p>
+<pre tabindex="0"><code class="language-{#latex" data-lang="{#latex">(package! org-fragtog)
+(package! aas :recipe (:host github :repo &quot;ymarco/auto-activating-snippets&quot;))
+(package! laas :recipe (:host github :repo &quot;tecosaur/LaTeX-auto-activating-snippets&quot;))
+(package! engrave-faces :recipe (:host github :repo &quot;tecosaur/engrave-faces&quot;))
+</code></pre><h3 id="web">Web</h3>
+<p>Some packages to help with&hellip; web? [ughh]{.ul}</p>
+<pre tabindex="0"><code class="language-{#web" data-lang="{#web">(package! ox-gfm)
+(package! websocket)
+</code></pre><ol>
+<li>
+<p>TODO</p>
+<ul>
+<li>Add <a href="https://github.com/akirakyle/emacs-webkit">https://github.com/akirakyle/emacs-webkit</a> when it can be
+bothered to work</li>
+</ul>
+</li>
+</ol>
+<h3 id="looks">Looks</h3>
+<p>Making emacs look good is most important, who even cares about
+useability?</p>
+<pre tabindex="0"><code class="language-{#looks" data-lang="{#looks">(unpin! doom-themes)
+(unpin! doom-modeline)
+(package! ox-chameleon :recipe (:host github :repo &quot;tecosaur/ox-chameleon&quot;))
+</code></pre><h3 id="tweaks">Tweaks</h3>
+<p>Some useful stuff to have in emacs</p>
+<pre tabindex="0"><code class="language-{#tweaks" data-lang="{#tweaks">(package! screenshot :recipe (:host github :repo &quot;tecosaur/screenshot&quot;))
+(package! lexic :recipe (:host github :repo &quot;tecosaur/lexic&quot;))
+(package! swiper)
+(package! vlf)
+</code></pre><h3 id="fun">Fun</h3>
+<p>Fun stuff to.. idk its just fun okay do i <em>really</em> need to explain
+myself?</p>
+<pre tabindex="0"><code class="language-{#fun" data-lang="{#fun">(package! xkcd)
+(package! keycast)
+</code></pre><h1 id="basic-configuration">Basic Configuration</h1>
+<p>Make this config run just a litte bit faster&hellip; every little counts
+(lexical bindings)</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">;;; config.el -*- lexical-binding: t; -*-
+</code></pre><p>And make proper emacs optimisations</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(when 'native-comp-compiler-options
+                 (setq native-comp-compiler-options '(&quot;-O3&quot; &quot;-march=native&quot; &quot;-mtune=native&quot;)))
+</code></pre><h2 id="personal-info">Personal Info</h2>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(setq user-full-name &quot;Teo Luppi&quot;
+      user-mail-address &quot;teol@btinternet.com&quot;)
+</code></pre><h2 id="shell">Shell</h2>
+<p>Teling emacs to use my shell of choice: zsh</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(setq explicit-shell-file-name (executable-find &quot;zsh&quot;))
+</code></pre><h2 id="vterm">Vterm</h2>
+<p>And my emacs terminal emulator: VTERM!</p>
+<p>Fix a bug with native-comp</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(setq vterm-always-compile-module t)
+</code></pre><p>Kill the buffer if the process exists</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(setq vterm-kill-buffer-on-exit t)
+</code></pre><p>Functions to get shell-side intergration going properly (+ a lil bit of
+magit)</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(after! vterm
+  (setf (alist-get &quot;magit-status&quot; vterm-eval-cmds nil nil #'equal)
+        '((lambda (path)
+            (magit-status path)))))
+</code></pre><p>Make ligatures work nicely</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(setq +ligatures-in-modes t)
+</code></pre><h2 id="fonts">Fonts</h2>
+<p>Strap in&hellip; font nerd means big font section :)</p>
+<p>I like Iosevka a my main programming font (patched by nerd-fonts). I'll
+also go with Overpass for my plain text font. I also prefer lighter
+fonts, so i'll set that</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">;; --- Fonts
+(setq doom-font (font-spec :family &quot;Iosevka Nerd Font&quot; :size 14)
+      doom-big-font (font-spec :family &quot;Iosevka Nerd Font&quot; :size 20)
+      doom-variable-pitch-font (font-spec :family &quot;Overpass&quot; :size 16)
+      doom-unicode-font (font-spec :family &quot;Iosevka Nerd Font&quot;)
+      doom-serif-font (font-spec :family &quot;Iosevka Nerd Font&quot; :weight 'light))
+</code></pre><p>For mixed pitched fonts, I'm going to go with Alegraya, as it is fairly
+comfy and generally nice</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">;; mixed pitch modes
+(defvar mixed-pitch-modes '(org-mode LaTeX-mode markdown-mode gfm-mode Info-mode)) ;; Modes that mixed pitch mode should be enabled in
+(defun init-mixed-pitch-h ()
+  (when (memq major-mode mixed-pitch-modes)
+    (mixed-pitch-mode 1))
+  (dolist (hook mixed-pitch-modes)
+    (add-hook (intern (concat (symbol-name hook) &quot;-hook&quot;)) #'mixed-pitch-mode)))
+(add-hook 'doom-init-ui-hook #'init-mixed-pitch-h)
+(add-hook! 'org-mode-hook #'+org-pretty-mode)
+
+;; Set mixed pitch font
+(after! mixed-pitch
+  (defface variable-pitch-serif
+    '((t (:family &quot;serif&quot;)))
+    &quot;A variable-pitch face with serifs.&quot;
+    :group 'basic-faces)
+  (setq mixed-pitch-set-height t)
+  (setq variable-pitch-serif-font (font-spec :family &quot;Alegreya&quot; :size 16))
+  (set-face-attribute 'variable-pitch-serif nil :font variable-pitch-serif-font)
+  (defun mixed-pitch-serif-mode (&amp;optional arg)
+    (interactive)
+    (let ((mixed-pitch-face 'variable-pitch-serif))
+      (mixed-pitch-mode (or arg 'toggle)))))
+</code></pre><p>Some nice harfbuzz ligatures</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(set-char-table-range composition-function-table ?f '([&quot;\\(?:ff?[fijlt]\\)&quot; 0 font-shape-gstring]))
+(set-char-table-range composition-function-table ?T '([&quot;\\(?:Th\\)&quot; 0 font-shape-gstring]))
+</code></pre><p>Just in case the fonts aren't there, lets add check to notify the user
+of the issue.</p>
+<pre tabindex="0"><code class="language-{#detect-missing-fonts" data-lang="{#detect-missing-fonts">(defvar required-fonts '(&quot;Overpass&quot; &quot;Alegreya&quot; )) ;; Iosevka doesn't work properly but i need that for my terminal to launch so i dont think ill forget it
+(defvar available-fonts
+  (delete-dups (or (font-family-list)
+                   (split-string (shell-command-to-string &quot;fc-list : family&quot;)
+                                 &quot;[,\n]&quot;))))
+(defvar missing-fonts
+  (delq nil (mapcar
+             (lambda (font)
+               (unless (delq nil (mapcar (lambda (f)
+                           (string-match-p (format &quot;^%s$&quot; font) f))
+                                         available-fonts))
+                                         font))
+                                         required-fonts)))
+(if missing-fonts
+    (pp-to-string
+     `(unless noninteractive
+        (add-hook! 'doom-init-ui-hook
+          (run-at-time nil nil
+                       (lambda ()
+                         (message &quot;%s missing the following fonts: %s&quot;
+                                  (propertize &quot;Warning!&quot; 'face '(bold warning))
+                                  (mapconcat (lambda (font)
+                                               (propertize font 'face 'font-lock-variable-name-face))
+                                             ',missing-fonts
+                                             &quot;, &quot;))
+                         (sleep-for 0.5))))))
+  &quot;;; No missing fonts detected&quot;)
+</code></pre><pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">&lt;&lt;detect-missing-fonts()&gt;&gt;
+</code></pre><h2 id="themes">Themes</h2>
+<p>I'm using one-dark for now, until tokyonight gets merged into
+doom-themes. bit annoying but dealable with</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(setq doom-theme 'doom-one)
+(setq doom-themes-padded-modeline t)
+</code></pre><h2 id="large-files">Large files</h2>
+<p>Making sure large files dont remove the living shit out of emacs (it
+gets very laggy)</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(require 'vlf-setup)
+</code></pre><p>Now we can use <code>M-x vlf</code> to see a larger file in little batches.</p>
+<h2 id="company">Company</h2>
+<p>Slow down company from suggesting everything, as it can be quite fast</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(after! company
+   (setq company-idle-delay 0.1
+      company-minimum-prefix-length 1
+      company-selection-wrap-around t
+      company-require-match 'never
+      company-dabbrev-downcase nil
+      company-dabbrev-ignore-case t
+      company-dabbrev-other-buffers nil
+      company-tooltip-limit 5
+      company-tooltip-minimum-width 50))
+(set-company-backend!
+  '(text-mode
+    markdown-mode
+    gfm-mode)
+  '(:seperate
+    company-yasnippet
+    company-ispell
+    company-files))
+
+;;nested snippets
+(setq yas-triggers-in-field t)
+</code></pre><p>LaTeX Snippets</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(use-package! aas
+  :commands aas-mode)
+
+(use-package! laas
+  :hook (LaTeX-mode . laas-mode)
+  :config
+  (defun laas-tex-fold-maybe ()
+    (unless (equal &quot;/&quot; aas-transient-snippet-key)
+      (+latex-fold-last-macro-a)))
+  (add-hook 'org-mode #'laas-mode)
+  (add-hook 'aas-post-snippet-expand-hook #'laas-tex-fold-maybe))
+
+</code></pre><p>Add those snippets while in org-mode (credit to henrik)</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(defadvice! fixed-org-yas-expand-maybe-h ()
+  &quot;Expand a yasnippet snippet, if trigger exists at point or region is active.
+Made for `org-tab-first-hook'.&quot;
+  :override #'+org-yas-expand-maybe-h
+  (when (and (featurep! :editor snippets)
+             (require 'yasnippet nil t)
+             (bound-and-true-p yas-minor-mode))
+    (and (let ((major-mode (cond ((org-in-src-block-p t)
+                                  (org-src-get-lang-mode (org-eldoc-get-src-lang)))
+                                 ((org-inside-LaTeX-fragment-p)
+                                  'latex-mode)
+                                 (major-mode)))
+               (org-src-tab-acts-natively nil) ; causes breakages
+               ;; Smart indentation doesn't work with yasnippet, and painfully slow
+               ;; in the few cases where it does.
+               (yas-indent-line 'fixed))
+           (cond ((and (or (not (bound-and-true-p evil-local-mode))
+                           (evil-insert-state-p)
+                           (evil-emacs-state-p))
+                       (or (and (bound-and-true-p yas--tables)
+                                (gethash major-mode yas--tables))
+                           (progn (yas-reload-all) t))
+                       (yas--templates-for-key-at-point))
+                  (yas-expand)
+                  t)
+                 ((use-region-p)
+                  (yas-insert-snippet)
+                  t)))
+         ;; HACK Yasnippet breaks org-superstar-mode because yasnippets is
+         ;;      overzealous about cleaning up overlays.
+         (when (bound-and-true-p org-superstar-mode)
+           (org-superstar-restart)))))
+</code></pre><p>Disabling the grammar suggestions&hellip; like whore i can spell tyvm</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(after! company
+  (add-hook! 'text-mode-hook (company-mode -1)))
+</code></pre><p>AND FINALLY, FIXING ORG-MODES FUCKED CODE BLOCK DEFAULTS&hellip; BANE OF MY
+LIFE THOSE LITTLE SHITS</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(defun +yas/org-src-header-p ()
+  &quot;Determine whether `point' is within a src-block header or header-args.&quot;
+  (pcase (org-element-type (org-element-context))
+    ('src-block (&lt; (point) ; before code part of the src-block
+                   (save-excursion (goto-char (org-element-property :begin (org-element-context)))
+                                   (forward-line 1)
+                                   (point))))
+    ('inline-src-block (&lt; (point) ; before code part of the inline-src-block
+                          (save-excursion (goto-char (org-element-property :begin (org-element-context)))
+                                          (search-forward &quot;]{&quot;)
+                                          (point))))
+    ('keyword (string-match-p &quot;^header-args&quot; (org-element-property :value (org-element-context))))))
+</code></pre><p>And now a function to use yasnippets to produce a nice way to do header
+args</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(defun +yas/org-prompt-header-arg (arg question values)
+  &quot;Prompt the user to set ARG header property to one of VALUES with QUESTION.
+The default value is identified and indicated. If either default is selected,
+or no selection is made: nil is returned.&quot;
+  (let* ((src-block-p (not (looking-back &quot;^#\\+property:[ \t]+header-args:.*&quot; (line-beginning-position))))
+         (default
+           (or
+            (cdr (assoc arg
+                        (if src-block-p
+                            (nth 2 (org-babel-get-src-block-info t))
+                          (org-babel-merge-params
+                           org-babel-default-header-args
+                           (let ((lang-headers
+                                  (intern (concat &quot;org-babel-default-header-args:&quot;
+                                                  (+yas/org-src-lang)))))
+                             (when (boundp lang-headers) (eval lang-headers t)))))))
+            &quot;&quot;))
+         default-value)
+    (setq values (mapcar
+                  (lambda (value)
+                    (if (string-match-p (regexp-quote value) default)
+                        (setq default-value
+                              (concat value &quot; &quot;
+                                      (propertize &quot;(default)&quot; 'face 'font-lock-doc-face)))
+                      value))
+                  values))
+    (let ((selection (consult--read question values :default default-value)))
+      (unless (or (string-match-p &quot;(default)$&quot; selection)
+                  (string= &quot;&quot; selection))
+        selection))))
+</code></pre><p>Finally, fetching the language info for the new source blocks Also,
+providing a way for the most popular language in the buffer (with
+<code>#+propertieos</code>)</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(defun +yas/org-src-lang ()
+  &quot;Try to find the current language of the src/header at `point'.
+Return nil otherwise.&quot;
+  (let ((context (org-element-context)))
+    (pcase (org-element-type context)
+      ('src-block (org-element-property :language context))
+      ('inline-src-block (org-element-property :language context))
+      ('keyword (when (string-match &quot;^header-args:\\([^ ]+\\)&quot; (org-element-property :value context))
+                  (match-string 1 (org-element-property :value context)))))))
+
+(defun +yas/org-last-src-lang ()
+  &quot;Return the language of the last src-block, if it exists.&quot;
+  (save-excursion
+    (beginning-of-line)
+    (when (re-search-backward &quot;^[ \t]*#\\+begin_src&quot; nil t)
+      (org-element-property :language (org-element-context)))))
+
+(defun +yas/org-most-common-no-property-lang ()
+  &quot;Find the lang with the most source blocks that has no global header-args, else nil.&quot;
+  (let (src-langs header-langs)
+    (save-excursion
+      (goto-char (point-min))
+      (while (re-search-forward &quot;^[ \t]*#\\+begin_src&quot; nil t)
+        (push (+yas/org-src-lang) src-langs))
+      (goto-char (point-min))
+      (while (re-search-forward &quot;^[ \t]*#\\+property: +header-args&quot; nil t)
+        (push (+yas/org-src-lang) header-langs)))
+
+    (setq src-langs
+          (mapcar #'car
+                  ;; sort alist by frequency (desc.)
+                  (sort
+                   ;; generate alist with form (value . frequency)
+                   (cl-loop for (n . m) in (seq-group-by #'identity src-langs)
+                            collect (cons n (length m)))
+                   (lambda (a b) (&gt; (cdr a) (cdr b))))))
+
+    (car (cl-set-difference src-langs header-langs :test #'string=))))
+</code></pre><p>Lets also include &lt;&lt; to autocomplete, as with () and {}</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(sp-local-pair
+ '(org-mode)
+ &quot;&lt;&lt;&quot; &quot;&gt;&gt;&quot;
+ :actions '(insert))
+</code></pre><p>And lastly lets add some helpful snippets for org-mode, and add a better
+templete</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(set-file-template! <span style="color:#e6db74">&#34;\\.org$&#34;</span> :trigger <span style="color:#e6db74">&#34;__&#34;</span> :mode <span style="color:#e6db74">&#39;org-mode</span>)
+</code></pre></div><h2 id="defaults">Defaults</h2>
+<p>Emacs has a lot of stupid defaults&hellip; Lets fix some!</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(setq evil-want-fine-undo t
+      scroll-margin 2
+      display-line-numbers-type nil
+      history-length 25
+      browse-url-browser-function 'xwidget-webkit-browse-url
+      truncate-string-ellipsis &quot;...&quot;)
+
+(fringe-mode 0)
+(global-subword-mode 1)
+</code></pre><p>Fixes an issue with flickering on wayland</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(add-to-list 'default-frame-alist '(inhibit-double-buffering . t))
+</code></pre><p>lisp-interaction-mode instead of fundemental mode</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(setq doom-scratch-initial-major-mode 'lisp-interaction-mode)
+</code></pre><p>Ask where to open splits, and open a buffer for it</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(setq evil-vsplit-window-right t
+      evil-split-window-below t)
+(defadvice! prompt-for-buffer (&amp;rest _)
+  :after '(evil-window-split evil-window-vsplit)
+  (consult-buffer))
+</code></pre><p>Use <code>;</code> instead of <code>:</code> for entering command mode</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(after! evil
+  (map! :nmv &quot;;&quot; #'evil-ex)
+  (map! :nmv &quot;:&quot; #'evil-repeat-find-char))
+</code></pre><p>Disable the window divider to help emacs look a little bit cleaner</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(custom-set-faces!
+  `(vertical-border :background ,(doom-color 'bg) :foreground ,(doom-color 'bg)))
+
+(when (boundp 'window-divider-mode)
+  (setq window-divider-default-places nil
+        window-divider-default-bottom-width 0
+        window-divider-default-right-width 0)
+  (window-divider-mode -1))
+</code></pre><pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(set-frame-parameter nil 'internal-border-width 35)
+(setq-default line-spacing 0.35)
+</code></pre><pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(setq solaire-mode-real-buffer-fn
+      (lambda ()
+        (or (eq major-mode '+doom-dashboard-mode)
+            (solaire-mode-real-buffer-p))))
+</code></pre><pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(remove-hook 'doom-first-buffer-hook #'global-hl-line-mode)
+</code></pre><h2 id="visual-configuration">Visual Configuration</h2>
+<h2 id="modeline">Modeline</h2>
+<p>Techosaurs improvements</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(after! doom-modeline
+  (doom-modeline-def-segment buffer-name
+    &quot;Display the current buffer's name, without any other information.&quot;
+    (concat
+     (doom-modeline-spc)
+     (doom-modeline--buffer-name)))
+
+  (doom-modeline-def-segment pdf-icon
+    &quot;PDF icon from all-the-icons.&quot;
+    (concat
+     (doom-modeline-spc)
+     (doom-modeline-icon 'octicon &quot;file-pdf&quot; nil nil
+                         :face (if (doom-modeline--active)
+                                   'all-the-icons-red
+                                 'mode-line-inactive)
+                         :v-adjust 0.02)))
+
+  (defun doom-modeline-update-pdf-pages ()
+    &quot;Update PDF pages.&quot;
+    (setq doom-modeline--pdf-pages
+          (let ((current-page-str (number-to-string (eval `(pdf-view-current-page))))
+                (total-page-str (number-to-string (pdf-cache-number-of-pages))))
+            (concat
+             (propertize
+              (concat (make-string (- (length total-page-str) (length current-page-str)) ? )
+                      &quot; P&quot; current-page-str)
+              'face 'mode-line)
+             (propertize (concat &quot;/&quot; total-page-str) 'face 'doom-modeline-buffer-minor-mode)))))
+
+  (doom-modeline-def-segment pdf-pages
+    &quot;Display PDF pages.&quot;
+    (if (doom-modeline--active) doom-modeline--pdf-pages
+      (propertize doom-modeline--pdf-pages 'face 'mode-line-inactive)))
+
+  (doom-modeline-def-modeline 'pdf
+    '(bar window-number pdf-pages pdf-icon buffer-name)
+    '(misc-info matches major-mode process vcs)))
+
+</code></pre><p>Lets add some stuff to the modeline</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(after! doom-modeline
+  (display-time-mode <span style="color:#ae81ff">1</span>)                              <span style="color:#75715e">;Enable time in the mode-line</span>
+  (setq doom-modeline-major-mode-icon <span style="color:#66d9ef">t</span>              <span style="color:#75715e">;Show major mode name</span>
+        doom-modeline-enable-word-count <span style="color:#66d9ef">t</span>            <span style="color:#75715e">;Show word count</span>
+        doom-modeline-modal-icon <span style="color:#66d9ef">t</span>                   <span style="color:#75715e">;Show vim mode icon</span>
+        inhibit-compacting-font-caches <span style="color:#66d9ef">t</span>))           <span style="color:#75715e">;Don&#39;t compact font caches in gc</span>
+</code></pre></div><p>The encoding is always utf-8, so this is a bit redundant, and i dont
+realy like it.. Lets remove that</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(defun doom-modeline-conditional-buffer-encoding ()
+  &quot;We expect the encoding to be LF UTF-8, so only show the modeline when this is not the case&quot;
+  (setq-local doom-modeline-buffer-encoding
+              (unless (and (memq (plist-get (coding-system-plist buffer-file-coding-system) :category)
+                                 '(coding-category-undecided coding-category-utf-8))
+                           (not (memq (coding-system-eol-type buffer-file-coding-system) '(1 2))))
+                t)))
+(add-hook 'after-change-major-mode-hook #'doom-modeline-conditional-buffer-encoding) ;;remove encoding
+</code></pre><h2 id="centaur-tabs">Centaur tabs</h2>
+<p>Hide the tabs if theres only one left</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(defun centaur-tabs-get-total-tab-length ()
+  (length (centaur-tabs-tabs (centaur-tabs-current-tabset))))
+
+(defun centaur-tabs-hide-on-window-change ()
+  (run-at-time nil nil
+               (lambda ()
+                 (centaur-tabs-hide-check (centaur-tabs-get-total-tab-length)))))
+
+(defun centaur-tabs-hide-check (len)
+  (shut-up
+    (cond
+     ((and (= len 1) (not (centaur-tabs-local-mode))) (call-interactively #'centaur-tabs-local-mode))
+     ((and (&gt;= len 2) (centaur-tabs-local-mode)) (call-interactively #'centaur-tabs-local-mode)))))
+
+</code></pre><p>And have some nice icon stuff</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(after! centaur-tabs
+  (centaur-tabs-mode -1)
+  (setq centaur-tabs-height 20
+        centaur-tabs-set-icons t
+        centaur-tabs-gray-out-icons 'buffer)
+  (add-hook 'window-configuration-change-hook 'centaur-tabs-hide-on-window-change)
+  (centaur-tabs-change-fonts &quot;Iosevka Nerd Font&quot; 105))
+</code></pre><h2 id="treemacs">Treemacs</h2>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(setq treemacs-width 25)
+(setq doom-themes-treemacs-theme &quot;doom-colors&quot;)
+</code></pre><h2 id="dashboard">Dashboard</h2>
+<p>Make a nice looking image be there because&hellip; yes</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(defvar fancy-splash-image-template
+  (expand-file-name &quot;misc/splash-images/emacs-logo.svg&quot; doom-private-dir)
+  &quot;Default template svg used for the splash image, with substitutions from &quot;)
+
+(defvar fancy-splash-sizes
+  `((:height 300 :min-height 50 :padding (0 . 2))
+    (:height 250 :min-height 42 :padding (2 . 4))
+    (:height 200 :min-height 35 :padding (3 . 3))
+    (:height 150 :min-height 28 :padding (3 . 3))
+    (:height 100 :min-height 20 :padding (2 . 2))
+    (:height 75  :min-height 15 :padding (2 . 1))
+    (:height 50  :min-height 10 :padding (1 . 0))
+    (:height 1   :min-height 0  :padding (0 . 0)))
+  &quot;list of plists with the following properties
+  :height the height of the image
+  :min-height minimum `frame-height' for image
+  :padding `+doom-dashboard-banner-padding' (top . bottom) to apply
+  :template non-default template file
+  :file file to use instead of template&quot;)
+
+(defvar fancy-splash-template-colours
+  '((&quot;$colour1&quot; . keywords) (&quot;$colour2&quot; . type) (&quot;$colour3&quot; . base5) (&quot;$colour4&quot; . base8))
+  &quot;list of colour-replacement alists of the form (\&quot;$placeholder\&quot; . 'theme-colour) which applied the template&quot;)
+
+(unless (file-exists-p (expand-file-name &quot;theme-splashes&quot; doom-cache-dir))
+  (make-directory (expand-file-name &quot;theme-splashes&quot; doom-cache-dir) t))
+
+(defun fancy-splash-filename (theme-name height)
+  (expand-file-name (concat (file-name-as-directory &quot;theme-splashes&quot;)
+                            theme-name
+                            &quot;-&quot; (number-to-string height) &quot;.svg&quot;)
+                    doom-cache-dir))
+
+(defun fancy-splash-clear-cache ()
+  &quot;Delete all cached fancy splash images&quot;
+  (interactive)
+  (delete-directory (expand-file-name &quot;theme-splashes&quot; doom-cache-dir) t)
+  (message &quot;Cache cleared!&quot;))
+
+(defun fancy-splash-generate-image (template height)
+  &quot;Read TEMPLATE and create an image if HEIGHT with colour substitutions as
+   described by `fancy-splash-template-colours' for the current theme&quot;
+  (with-temp-buffer
+    (insert-file-contents template)
+    (re-search-forward &quot;$height&quot; nil t)
+    (replace-match (number-to-string height) nil nil)
+    (dolist (substitution fancy-splash-template-colours)
+      (goto-char (point-min))
+      (while (re-search-forward (car substitution) nil t)
+        (replace-match (doom-color (cdr substitution)) nil nil)))
+    (write-region nil nil
+                  (fancy-splash-filename (symbol-name doom-theme) height) nil nil)))
+
+(defun fancy-splash-generate-images ()
+  &quot;Perform `fancy-splash-generate-image' in bulk&quot;
+  (dolist (size fancy-splash-sizes)
+    (unless (plist-get size :file)
+      (fancy-splash-generate-image (or (plist-get size :template)
+                                       fancy-splash-image-template)
+                                   (plist-get size :height)))))
+
+(defun ensure-theme-splash-images-exist (&amp;optional height)
+  (unless (file-exists-p (fancy-splash-filename
+                          (symbol-name doom-theme)
+                          (or height
+                              (plist-get (car fancy-splash-sizes) :height))))
+
+    (fancy-splash-generate-images)))
+
+(defun get-appropriate-splash ()
+  (let ((height (frame-height)))
+    (cl-some (lambda (size) (when (&gt;= height (plist-get size :min-height)) size))
+             fancy-splash-sizes)))
+
+(setq fancy-splash-last-size nil)
+(setq fancy-splash-last-theme nil)
+(defun set-appropriate-splash (&amp;rest _)
+  (let ((appropriate-image (get-appropriate-splash)))
+    (unless (and (equal appropriate-image fancy-splash-last-size)
+                 (equal doom-theme fancy-splash-last-theme)))
+    (unless (plist-get appropriate-image :file)
+      (ensure-theme-splash-images-exist (plist-get appropriate-image :height)))
+    (setq fancy-splash-image
+          (or (plist-get appropriate-image :file)
+              (fancy-splash-filename (symbol-name doom-theme) (plist-get appropriate-image :height))))
+    (setq +doom-dashboard-banner-padding (plist-get appropriate-image :padding))
+    (setq fancy-splash-last-size appropriate-image)
+    (setq fancy-splash-last-theme doom-theme)
+    (+doom-dashboard-reload)))
+
+(add-hook 'window-size-change-functions #'set-appropriate-splash)
+(add-hook 'doom-load-theme-hook #'set-appropriate-splash)
+</code></pre><p>And lets add a nice little phrasey thingy in too</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(defvar splash-phrase-source-folder
+  (expand-file-name &quot;misc/splash-phrases&quot; doom-private-dir)
+  &quot;A folder of text files with a fun phrase on each line.&quot;)
+
+(defvar splash-phrase-sources
+  (let* ((files (directory-files splash-phrase-source-folder nil &quot;\\.txt\\'&quot;))
+         (sets (delete-dups (mapcar
+                             (lambda (file)
+                               (replace-regexp-in-string &quot;\\(?:-[0-9]+-\\w+\\)?\\.txt&quot; &quot;&quot; file))
+                             files))))
+    (mapcar (lambda (sset)
+              (cons sset
+                    (delq nil (mapcar
+                               (lambda (file)
+                                 (when (string-match-p (regexp-quote sset) file)
+                                   file))
+                               files))))
+            sets))
+  &quot;A list of cons giving the phrase set name, and a list of files which contain phrase components.&quot;)
+
+(defvar splash-phrase-set
+  (nth (random (length splash-phrase-sources)) (mapcar #'car splash-phrase-sources))
+  &quot;The default phrase set. See `splash-phrase-sources'.&quot;)
+
+(defun splase-phrase-set-random-set ()
+  &quot;Set a new random splash phrase set.&quot;
+  (interactive)
+  (setq splash-phrase-set
+        (nth (random (1- (length splash-phrase-sources)))
+             (cl-set-difference (mapcar #'car splash-phrase-sources) (list splash-phrase-set))))
+  (+doom-dashboard-reload t))
+
+(defvar splase-phrase--cache nil)
+
+(defun splash-phrase-get-from-file (file)
+  &quot;Fetch a random line from FILE.&quot;
+  (let ((lines (or (cdr (assoc file splase-phrase--cache))
+                   (cdar (push (cons file
+                                     (with-temp-buffer
+                                       (insert-file-contents (expand-file-name file splash-phrase-source-folder))
+                                       (split-string (string-trim (buffer-string)) &quot;\n&quot;)))
+                               splase-phrase--cache)))))
+    (nth (random (length lines)) lines)))
+
+(defun splash-phrase (&amp;optional set)
+  &quot;Construct a splash phrase from SET. See `splash-phrase-sources'.&quot;
+  (mapconcat
+   #'splash-phrase-get-from-file
+   (cdr (assoc (or set splash-phrase-set) splash-phrase-sources))
+   &quot; &quot;))
+
+(defun doom-dashboard-phrase ()
+  &quot;Get a splash phrase, flow it over multiple lines as needed, and make fontify it.&quot;
+  (mapconcat
+   (lambda (line)
+     (+doom-dashboard--center
+      +doom-dashboard--width
+      (with-temp-buffer
+        (insert-text-button
+         line
+         'action
+         (lambda (_) (+doom-dashboard-reload t))
+         'face 'doom-dashboard-menu-title
+         'mouse-face 'doom-dashboard-menu-title
+         'help-echo &quot;Random phrase&quot;
+         'follow-link t)
+        (buffer-string))))
+   (split-string
+    (with-temp-buffer
+      (insert (splash-phrase))
+      (setq fill-column (min 70 (/ (* 2 (window-width)) 3)))
+      (fill-region (point-min) (point-max))
+      (buffer-string))
+    &quot;\n&quot;)
+   &quot;\n&quot;))
+
+(defadvice! doom-dashboard-widget-loaded-with-phrase ()
+  :override #'doom-dashboard-widget-loaded
+  (setq line-spacing 0.2)
+  (insert
+   &quot;\n\n&quot;
+   (propertize
+    (+doom-dashboard--center
+     +doom-dashboard--width
+     (doom-display-benchmark-h 'return))
+    'face 'doom-dashboard-loaded)
+   &quot;\n&quot;
+   (doom-dashboard-phrase)
+   &quot;\n&quot;))
+</code></pre><p>Lastly, the doom dashboard &quot;useful commands&quot; are no longer useful to
+me. So, we'll disable them and then for a particularly <em>clean</em> look
+disable the modeline, then also hide the cursor.</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(remove-hook '+doom-dashboard-functions #'doom-dashboard-widget-shortmenu)
+(add-hook! '+doom-dashboard-mode-hook (hide-mode-line-mode 1) (hl-line-mode -1))
+(setq-hook! '+doom-dashboard-mode-hook evil-normal-state-cursor (list nil))
+</code></pre><p>Turning off solaire so that it doesn't look ugly</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(add-hook '+doom-dashboard-mode-hook #'turn-off-solaire-mode)
+</code></pre><h2 id="writeroom">Writeroom</h2>
+<p>Some nice asthetic tweaks when using org-mode with writeroom-mode
+enabled. Namely:</p>
+<ul>
+<li>Use a serif-ed variable-pitch font</li>
+<li>Hiding headline leading stars</li>
+<li>Using fleurons as headline bullets</li>
+<li>Hiding line numbers</li>
+<li>Removing outline indentation</li>
+<li>Centering the text</li>
+<li>Turning on <code>org-pretty-table-mode</code></li>
+<li>Disabling <code>doom-modeline</code></li>
+</ul>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(defvar +zen-serif-p t
+  &quot;Whether to use a serifed font with `mixed-pitch-mode'.&quot;)
+(after! writeroom-mode
+  (defvar-local +zen--original-org-indent-mode-p nil)
+  (defvar-local +zen--original-mixed-pitch-mode-p nil)
+  (defun +zen-enable-mixed-pitch-mode-h ()
+    &quot;Enable `mixed-pitch-mode' when in `+zen-mixed-pitch-modes'.&quot;
+    (when (apply #'derived-mode-p +zen-mixed-pitch-modes)
+      (if writeroom-mode
+          (progn
+            (setq +zen--original-mixed-pitch-mode-p mixed-pitch-mode)
+            (funcall (if +zen-serif-p #'mixed-pitch-serif-mode #'mixed-pitch-mode) 1))
+        (funcall #'mixed-pitch-mode (if +zen--original-mixed-pitch-mode-p 1 -1)))))
+  (pushnew! writeroom--local-variables
+            'display-line-numbers
+            'visual-fill-column-width
+            'org-adapt-indentation
+            'org-superstar-headline-bullets-list
+            'org-superstar-remove-leading-stars)
+  (add-hook 'writeroom-mode-enable-hook
+            (defun +zen-prose-org-h ()
+              &quot;Reformat the current Org buffer appearance for prose.&quot;
+              (when (eq major-mode 'org-mode)
+                (setq display-line-numbers nil
+                      visual-fill-column-width 60
+                      org-adapt-indentation nil)
+                (when (featurep 'org-superstar)
+                  (setq-local org-superstar-headline-bullets-list '(&quot;◉&quot; &quot;○&quot; &quot;✸&quot; &quot;✿&quot; &quot;✤&quot; &quot;✜&quot; &quot;◆&quot; &quot;▶&quot;)
+                              org-superstar-remove-leading-stars t)
+                  (org-superstar-restart))               (setq
+                 +zen--original-org-indent-mode-p org-indent-mode)
+                (org-indent-mode -1))))
+  (add-hook! 'writeroom-mode-hook
+    (if writeroom-mode
+        (add-hook 'post-command-hook #'recenter nil t)
+      (remove-hook 'post-command-hook #'recenter t)))
+  (add-hook 'writeroom-mode-enable-hook #'doom-disable-line-numbers-h)
+  (add-hook 'writeroom-mode-disable-hook #'doom-enable-line-numbers-h)
+  (add-hook 'writeroom-mode-disable-hook
+            (defun +zen-nonprose-org-h ()
+              &quot;Reverse the effect of `+zen-prose-org'.&quot;
+              (when (eq major-mode 'org-mode)
+                (when (featurep 'org-superstar)
+                  (org-superstar-restart))
+                (when +zen--original-org-indent-mode-p (org-indent-mode 1))))))
+</code></pre><h2 id="font-display">Font display</h2>
+<p><code>+org-pretty-mode</code> is awesome!</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(setq org-pretty-entities-include-sub-superscripts nil)
+</code></pre><p>And lets make headings a bit bigger so they stand out more</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(custom-set-faces!
+  '(org-document-title :height 1.2)
+  '(outline-1 :weight extra-bold :height 1.25)
+  '(outline-2 :weight bold :height 1.15)
+  '(outline-3 :weight bold :height 1.12)
+  '(outline-4 :weight semi-bold :height 1.09)
+  '(outline-5 :weight semi-bold :height 1.06)
+  '(outline-6 :weight semi-bold :height 1.03)
+  '(outline-8 :weight semi-bold)
+  '(outline-9 :weight semi-bold))
+</code></pre><p>It seems reasonable to have deadlines in the error face when they're
+passed.</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(setq org-agenda-deadline-faces
+      '((1.0 . error)
+        (1.0 . org-warning)
+        (0.5 . org-upcoming-deadline)
+        (0.0 . org-upcoming-distant-deadline)))
+</code></pre><p>We can then have quote blocks stand out a bit more by making them
+<em>italic</em>.</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(setq org-fontify-quote-and-verse-blocks t)
+</code></pre><pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(use-package! org-appear
+  :hook (org-mode . org-appear-mode)
+  :config
+  (setq org-appear-autoemphasis t
+        org-appear-autosubmarkers t
+        org-appear-autolinks nil)
+  (run-at-time nil nil #'org-appear--set-elements))
+</code></pre><p>Org files can be rather nice to look at, particularly with some of the
+customisations here. This comes at a cost however, expensive font-lock.
+Feeling like you're typing through molasses in large files is no fun,
+but there is a way I can defer font-locking when typing to make the
+experience more responsive.</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(defun locally-defer-font-lock ()
+  &quot;Set jit-lock defer and stealth, when buffer is over a certain size.&quot;
+  (when (&gt; (buffer-size) 50000)
+    (setq-local jit-lock-defer-time 0.05
+                jit-lock-stealth-time 1)))
+
+(add-hook 'org-mode-hook #'locally-defer-font-lock)
+
+
+(custom-set-faces!
+  `(org-block-end-line :background ,(doom-color 'base2))
+  `(org-block-begin-line :background ,(doom-color 'base2)))
+</code></pre><h3 id="fontifying-inline-source-blocks">Fontifying inline source blocks</h3>
+<p>Ah god&hellip; I quote some random config</p>
+<blockquote>
+<p>Org does lovely things with <code>#+begin_src</code>{.verbatim} blocks, like
+using font-lock for language's major-mode behind the scenes and
+pulling out the lovely colourful results. By contrast, inline
+<code>src_</code>{.verbatim} blocks are somewhat neglected.</p>
+<p>I am not the first person to feel this way, thankfully others have
+<a href="https://stackoverflow.com/questions/20309842/how-to-syntax-highlight-for-org-mode-inline-source-code-src-lang/28059832">taken to
+stackexchange</a>
+to voice their desire for inline src fontification. I was going to
+steal their work, but unfortunately they didn't perform <em>true</em> source
+code fontification, but simply applied the <code>org-code</code>{.verbatim} face
+to the content.</p>
+<p>We can do better than that, and we shall! Using
+<code>org-src-font-lock-fontify-block</code> we can apply language-appropriate
+syntax highlighting. Then, continuing on to
+<code>{{{results(...)}}}</code>{.verbatim} , it can have the
+<code>org-block</code>{.verbatim} face applied to match, and then the
+value-surrounding constructs hidden by mimicking the behaviour of
+<code>prettify-symbols-mode</code>.</p>
+</blockquote>
+<p>Now, i wholly agree with this. But icba to explain it</p>
+<pre tabindex="0"><code class="language-commonlisp" data-lang="commonlisp">(defvar org-prettify-inline-results t
+  &quot;Whether to use (ab)use prettify-symbols-mode on {{{results(...)}}}.
+Either t or a cons cell of strings which are used as substitutions
+for the start and end of inline results, respectively.&quot;)
+
+(defvar org-fontify-inline-src-blocks-max-length 200
+  &quot;Maximum content length of an inline src block that will be fontified.&quot;)
+
+(defun org-fontify-inline-src-blocks (limit)
+  &quot;Try to apply `org-fontify-inline-src-blocks-1'.&quot;
+  (condition-case nil
+      (org-fontify-inline-src-blocks-1 limit)
+    (error (message &quot;Org mode fontification error in %S at %d&quot;
+                    (current-buffer)
+                    (line-number-at-pos)))))
+
+(defun org-fontify-inline-src-blocks-1 (limit)
+  &quot;Fontify inline src_LANG blocks, from `point' up to LIMIT.&quot;
+  (let ((case-fold-search t)
+        (initial-point (point)))
+    (while (re-search-forward &quot;\\_&lt;src_\\([^ \t\n[{]+\\)[{[]?&quot; limit t) ; stolen from `org-element-inline-src-block-parser'
+      (let ((beg (match-beginning 0))
+            pt
+            (lang-beg (match-beginning 1))
+            (lang-end (match-end 1)))
+        (remove-text-properties beg lang-end '(face nil))
+        (font-lock-append-text-property lang-beg lang-end 'face 'org-meta-line)
+        (font-lock-append-text-property beg lang-beg 'face 'shadow)
+        (font-lock-append-text-property beg lang-end 'face 'org-block)
+        (setq pt (goto-char lang-end))
+        ;; `org-element--parse-paired-brackets' doesn't take a limit, so to
+        ;; prevent it searching the entire rest of the buffer we temporarily
+        ;; narrow the active region.
+        (save-restriction
+          (narrow-to-region beg (min (point-max) limit (+ lang-end org-fontify-inline-src-blocks-max-length)))
+          (when (ignore-errors (org-element--parse-paired-brackets ?\[))
+            (remove-text-properties pt (point) '(face nil))
+            (font-lock-append-text-property pt (point) 'face 'org-block)
+            (setq pt (point)))
+          (when (ignore-errors (org-element--parse-paired-brackets ?\{))
+            (remove-text-properties pt (point) '(face nil))
+            (font-lock-append-text-property pt (1+ pt) 'face '(org-block shadow))
+            (unless (= (1+ pt) (1- (point)))
+              (if org-src-fontify-natively
+                  (org-src-font-lock-fontify-block (buffer-substring-no-properties lang-beg lang-end) (1+ pt) (1- (point)))
+                (font-lock-append-text-property (1+ pt) (1- (point)) 'face 'org-block)))
+            (font-lock-append-text-property (1- (point)) (point) 'face '(org-block shadow))
+            (setq pt (point))))
+        (when (and org-prettify-inline-results (re-search-forward &quot;\\= {{{results(&quot; limit t))
+          (font-lock-append-text-property pt (1+ pt) 'face 'org-block)
+          (goto-char pt))))
+    (when org-prettify-inline-results
+      (goto-char initial-point)
+      (org-fontify-inline-src-results limit))))
+
+(defun org-fontify-inline-src-results (limit)
+  (while (re-search-forward &quot;{{{results(\\(.+?\\))}}}&quot; limit t)
+    (remove-list-of-text-properties (match-beginning 0) (point)
+                                    '(composition
+                                      prettify-symbols-start
+                                      prettify-symbols-end))
+    (font-lock-append-text-property (match-beginning 0) (match-end 0) 'face 'org-block)
+    (let ((start (match-beginning 0)) (end (match-beginning 1)))
+      (with-silent-modifications
+        (compose-region start end (if (eq org-prettify-inline-results t) &quot;⟨&quot; (car org-prettify-inline-results)))
+        (add-text-properties start end `(prettify-symbols-start ,start prettify-symbols-end ,end))))
+    (let ((start (match-end 1)) (end (point)))
+      (with-silent-modifications
+        (compose-region start end (if (eq org-prettify-inline-results t) &quot;⟩&quot; (cdr org-prettify-inline-results)))
+        (add-text-properties start end `(prettify-symbols-start ,start prettify-symbols-end ,end))))))
+
+(defun org-fontify-inline-src-blocks-enable ()
+  &quot;Add inline src fontification to font-lock in Org.
+Must be run as part of `org-font-lock-set-keywords-hook'.&quot;
+  (setq org-font-lock-extra-keywords
+        (append org-font-lock-extra-keywords '((org-fontify-inline-src-blocks)))))
+
+(add-hook 'org-font-lock-set-keywords-hook #'org-fontify-inline-src-blocks-enable)
+</code></pre><ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://edencreeper.ml/" >
+    &copy;  edencreeper 2021 
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+<a href="https://github.com/edencreeper" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

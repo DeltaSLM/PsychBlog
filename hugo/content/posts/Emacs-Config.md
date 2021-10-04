@@ -37,3 +37,4 @@ I found Tecosaurs config - who appears to be a prominent member of the doom comm
 I also created lots of my config using stuff found from SystemCrafters live streams on vanilla emacs configuration.
 So yeah, credit to them
 
+[My Emacs Config](https://edencreeper.ml/posts/config.org)
