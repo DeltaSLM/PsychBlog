@@ -17,5 +17,16 @@
 Hosting My personal site is currently hosted on my VPS, but it is often a hassle to deal with. I am happy with that, for that site, as I feel it provides a good learning experience, but for this site I just wanted something that would work.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>http://edencreeper.ml/posts/emacs-config/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://edencreeper.ml/posts/emacs-config/</guid>
+      <description>Emacs I recently switched from vim to Emacs! Some observations commense here
+Emacs is not a text editor! Well. not just a text editor&amp;hellip; From the website: &amp;ldquo;At its core is an interpreter for Emacs Lisp, a dialect of the Lisp programming language with extensions to support text editing.&amp;rdquo;
+What does this mean? Emacs is purely a lisp interpreter, same as you might find a python intepreter installed on your system.</description>
+    </item>
+    
   </channel>
 </rss>
