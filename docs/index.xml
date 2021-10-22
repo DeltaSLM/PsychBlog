@@ -6,7 +6,18 @@
     <description>Recent content on edencreeper</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sat, 25 Sep 2021 17:13:46 +0100</lastBuildDate><atom:link href="http://edencreeper.ml/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Oct 2021 22:46:00 +0100</lastBuildDate><atom:link href="http://edencreeper.ml/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Podcasts</title>
+      <link>http://edencreeper.ml/posts/podcasts/</link>
+      <pubDate>Fri, 22 Oct 2021 22:46:00 +0100</pubDate>
+      
+      <guid>http://edencreeper.ml/posts/podcasts/</guid>
+      <description>Recently I&amp;rsquo;ve been listning to a lot of podcasts to try and help sleep. A quick roundup of ones that I enjoyed should now commence
+I&amp;rsquo;ve split this into two parts - Ongoing and One-time. I do this as ongoing podcasts seem to generally have a different vibe
+oh also, the platforms mentioned are where I listened to them. They are in no way all that theyre on, or what theyre best to listen to</description>
+    </item>
+    
     <item>
       <title>Making a completely free website</title>
       <link>http://edencreeper.ml/posts/hugosite/</link>
